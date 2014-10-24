@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wdc.serverproject.Server" >
+
+    <Button
+        android:id="@+id/redshellbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginTop="31dp"
+        android:onClick="sendItem"
+        android:text="Send" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mushroombutton"
+        android:layout_alignBottom="@+id/mushroombutton"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Mushroom"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bananabutton"
+        android:layout_alignBottom="@+id/bananabutton"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="Banana"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/redshellbutton"
+        android:layout_alignBottom="@+id/redshellbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="31dp"
+        android:text="Redshell"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/mushroombutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/redshellbutton"
+        android:layout_below="@+id/redshellbutton"
+        android:layout_marginTop="18dp"
+        android:onClick="sendItem"
+        android:text="Send" />
+
+    <Button
+        android:id="@+id/bananabutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mushroombutton"
+        android:layout_below="@+id/mushroombutton"
+        android:layout_marginTop="18dp"
+        android:onClick="sendItem"
+        android:text="Send" />
+
+</RelativeLayout>
